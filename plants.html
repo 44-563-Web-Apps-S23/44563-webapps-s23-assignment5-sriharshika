@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Starter</title>
+  <title>Assignment05</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -13,6 +13,25 @@
     integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 </head>
 <body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="plants.html">Preffered Plants</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#InsectNavbarContent" aria-controls="InsectNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggle-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="PlantsNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link active" href="plants.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="basic.html">Basic</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="advanced.html">Advanced</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 <h1>Plants by Sri harshika sattor</h1>
 <div class="container">
     <div class="row">
@@ -46,7 +65,8 @@
 <table class="table table-success table-striped">
   <thead>
     <tr>
-      <th scope="col">“Letter</th>
+      <th scope="col">#</th>
+      <th scope="col">Letter</th>
       <th scope="col">Plant</th>
       <th scope="col">Mountain</th>
       <th scope="col">Lake</th>
@@ -55,37 +75,43 @@
   <div>
   <tbody>
     <tr>
-      <th scope="row">S</th>
+      <th scope="row">1</th>
+      <td>S</td>
       <td>Sacred bamboo</td>
       <td>saca peak</td>
       <td>Saguaro</td>
     </tr>
     <tr class="table-danger">
-      <th scope="row">A</th>
+      <th scope="row">2</th>
+      <td>A</td>
       <td>African Lily</td>
       <td>Appalachians</td>
       <td>Agiak Lagoon</td>
     </tr>
     <tr>
-      <th scope="row">T</th>
+      <th scope="row">3</th>
+      <td>T</td>
       <td>Tanacetum</td>
       <td>taboche</td>
       <td>Tahoe</td>
     </tr>
     <tr class="table-primary">
-      <th scope="row">T</th>
+      <th scope="row">4</th>
+      <td>T</td>
       <td>Taxus</td>
       <td>tahan</td>
       <td>Tai</td>
     </tr>
     <tr>
-      <th scope="row">O</th>
+      <th scope="row">5</th>
+      <td>O</td>
       <td>Orange</td>
       <td>Osborn Dome</td>
       <td>Ohio</td>
     </tr>
     <tr class="table-info">
-      <th scope="row">R</th>
+      <th scope="row">6</th>
+      <td>R</td>
       <td>REHMANNIA</td>
       <td>ramon</td>
       <td>Rainy</td>
@@ -129,6 +155,25 @@
   </div>
 </div>
 <br>
+<div class="container">
+    <form action="">
+        <div class="form-group">
+            <label for="Emailaddress" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="form-group">
+            <label for="PlantInput" class="form-label">PlantName</label>
+            <input type="text" class="form-control" id="PlantInput" placeholder="Please Enter Your Plant">
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="PlantCheck">
+            <label class="form-check-label" for="PlantCheck">Sign up for newsletter?</label>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+  </div>
+
 <div class="container">
   <div class="row">
       <div class="col-md">
